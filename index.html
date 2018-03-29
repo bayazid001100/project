@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>University Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flip-box.css">
+
+    
+        <script src="js/modernizr_2.6.3-custom.js"></script>
+  
+</head>
+    
+<body>
+    <div class="header template clear">
+        <div class="contact_info clear">
+            <ul>
+                <li><a href="Contact%20Us.html">Contact Us</a></li>
+                <li>
+                <img src="images/logo/web-mail.png">
+                    <a href="Webmail.html">Webmail</a>
+                </li>
+                <li>
+                <img src="images/logo/payment.png">
+                    <a href="Online%20Payment%20&%20Appointment.html">Online Payment & Appointment</a>
+                </li>  
+            </ul>
+        </div>
+        <div class="social clear">
+             <a href="https://www.facebook.com/Sohag.As15"><img src="images/social/facebook.png" alt="Facebook"/></a>
+             <a href="https://twitter.com/Borof_suvro"><img src="images/social/twitter.png" alt="Twitter"/></a>
+             <a href="https://plus.google.com/u/0/109990849094541102408"><img src="images/social/google.png" alt="GooglePlus"/></a>
+             <a href="https://www.linkedin.com/in/sohag-babu-343a8713a/"><img src="images/social/linkedin.png" alt="LinkedIn"/></a>
+         </div>
+    </div>
+    
+    
+    <div class="header_logo template clear">
+         <div class="logo clear">
+              <img src="images/logo.png" alt=" Hospital Logo">
+        </div>
+            
+             <div class="navbar">
+  <a href="index.html">Home</a>
+                 
+  
+    <div class="dropdown">
+    <button class="dropbtn">ABOUT US 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Profile.html">Profile</a>
+      <a href="Mission,Vission%20&%20Values.html">Mission,Vission & Values</a>
+      <a href="Board%20Of%20Directiors.html">Board Of Directiors</a>
+        <a href="Milestones.html">Milestones</a>
+        <a href="Award%20&%20Affiliation.html">Award & Affiliation</a>
+        <a href="Disclaimer.html">Disclaimer</a>
+    </div>
+                     
+  </div>
+                 <div class="dropdown">
+    <button class="dropbtn">SPECIALITIES 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Cancer%20Care%20Centre.html">Cancer Care Centre</a>
+      <a href="Dental.html">Dental</a>
+      <a href="Lab%20Medicine.html">Lab Medicine</a>
+        <a href="Nephrology.html">Nephrology</a>
+      <a href="Neurology.html">Neurology</a>
+        <a href="Nerosurgery.html">Nerosurgery</a>
+      <a href="Orthopaedics.html">Orthopaedics</a>
+        <a href="Urology.html">Urology</a>
+    </div>
+                     
+  </div>
+                 <div class="dropdown">
+    <button class="dropbtn">FOR PATIENTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+        <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                 <div class="dropdown">
+    <button class="dropbtn">NEWS & MEDIA 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                 <div class="dropdown">
+    <button class="dropbtn">HEALTH LIBRARY 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+                 <a href="#home">OFFICIAL</a>
+                 
+</div>
+              
+            
+        </div>
+    <!-- Slideshow container -->
+<div class="slideshow-container template clear">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="img1.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="img2.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="img3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- -------------------------------------------- --> 
+    <div class="flip template clear">
+
+        <div class="flip-box flip-up">
+            <div class="object">
+                <div class="front">
+                    <div class="doctor_logo">
+                      <img src="images/doctor.png"/>
+                    </div>
+                    <p>Find a Consultant</p>
+                </div>
+                <div class="back">
+                    <p>Find a Consultant</p>
+                </div>
+                <div class="flank"></div>
+            </div>
+        </div><!-- /.flip-box -->
+
+        <div class="flip-box alternative">
+            <div class="object">
+                <div class="front">
+                    <div class="doctor_logo">
+                      <img src="images/calendar.png"/>
+                    </div>
+                    <p>Make an Appointment</p>
+                </div>
+                <div class="back">
+                    <p>Make an Appointment</p>
+                </div>
+                <div class="flank"></div>
+            </div>
+        </div><!-- /.flip-box -->
+         <div class="flip-box flip-up">
+            <div class="object">
+                <div class="front">
+                    <div class="doctor_logo">
+                      <img src="images/report.png"/>
+                    </div>
+                    <p>Online Daignostic Report</p>
+                </div>
+                <div class="back">
+                   <p>Online Daignostic Report</p>
+                </div>
+                <div class="flank"></div>
+            </div>
+        </div><!-- /.flip-box -->
+        <div class="flip-box alternative">
+            <div class="object">
+                <div class="front">
+                    <div class="doctor_logo">
+                      <img src="images/photogallery.png"/>
+                    </div>
+                    <p>Photo Gallery</p>
+                </div>
+                <div class="back">
+                     <p>Photo Gallery</p>
+                    
+                </div>
+                <div class="flank"></div>
+            </div>
+        </div><!-- /.flip-box -->
+
+    </div>
+ <!-- -------------------------------------------- --> 
+    
+    <div class="sohag">
+ <div class="maincontent">
+            <div class="samepost">
+             <h1>KNOW </h1>
+                <h2>Your Doctor</h2>
+                <a href="#"><img src="images/post1.jpg" alt="post image"/></a>
+                    <h3>Dr. Md. Momenul Huq</h3>
+                <p>
+                     completed his MBBS from Chittagong Medical College, University of Chittagong, Bangladesh in May 1985. He completed his internship training in Chittagong Medical College, Hospital.
+                   </p>
+                <div class="readmore ">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="samepost">
+             <h1>PATIENT </h1>
+                <h2>Testimonial</h2>
+                <img src="images/post1.jpg" alt="post image"/>
+                <h3>Mashrafe Bin Mortaza</h3>
+                    <p>
+                    Dear all staff of Apollo Hospitals Dhaka, it was a great experience staying in Apollo Dhaka. I wasn't a perfect man when i was admitted. Now i am very good and thanks to everyone
+                   </p>
+                <div class="readmore ">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="samepost">
+             <h1>MASTER </h1>
+                <h2>Health Check</h2>
+                <img src="images/post1.jpg" alt="post image"/>
+                    <p>
+                   Apollo Hospitals Dhaka is a 425-bed multidisciplinary super specialty tertiary care hospital which is the first and only hospital in Bangladesh to have got JCI Accredited.
+                    The Joint Commission International (JCI) is a U.S. based accreditation body dedicated to improving healthcare quality and safety around the world.. ...
+                   </p>
+                <div class="readmore ">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+          </div>  
+        
+    <!-- ------------------------------------------ --> 
+ <div class="maincontent">
+            <div class="samepost_1">
+             
+                <a href="#"><img src="images/post1.jpg" alt="post image"/></a>
+                <h2>Generous Act Saves Life of a Young Man</h2>
+                    <p>
+Mahabub, a 17 year old young man came to Apollo Hospitals Dhaka on 3rd February, 2016 with history of stab injury and a primary surgery done in Chittagong following which his life was miserable. He visited Dr. SMG Kibria at Out-Patient Department and got admitted.
+                   </p>
+                <div class="readmore ">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="samepost_1">
+             
+                <img src="images/post1.jpg" alt="post image"/>
+                <h2>A Private Hospital’s Compassionate Approach Saves Life of a Construction Worker</h2>
+                    <p>
+                    Mr. Mizanur Rahman (22) is a young construction labor. On the evening of the 3rd of January, 2016, while Mizanur was working for a building inside Bashundhara Residential Area, he fell from height followed by an electric shock.
+                   </p>
+                <div class="readmore ">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+     <!-- ------------------------------------------ -->
+   
+ <footer>
+<div class="footer_first">
+    
+    <div class="hotline">
+    <img src="images/accident.jpg" alt="ambulance"/>
+    </div>
+    
+    <div class="info_cen">
+    <div class="other">
+    <h3>APPOINTMENT :</h3>
+        <ul>
+        <li>
+            <a>10678</a>
+        </li>
+            <li>
+            <a>(02) 55037242</a>
+        </li>
+            <li>
+            <a>09606-276555 </a>
+        </li>
+        </ul>
+    </div>
+    
+    <div class="other">
+    <ul>
+        <li>
+            <a>10678</a>
+        </li>
+            <li>
+            <a>(02) 55037242</a>
+        </li>
+            <li>
+            <a>09606-276555 </a>
+        </li>
+         <li>
+            <a>PABX : (02) 8431661- 5 </a>
+        </li>
+            <li>
+            <a>Duty Manager : 01713-064563</a>
+        </li>
+            <li>
+            <a>Ambulance : 01714-090000 </a>
+        </li>
+        <li>
+            <li>
+            <a>Master Health Check : (02) 8431600</a>
+        </li>
+       
+        <li><a href="Contact%20Us.html">Contact Us</a></li>
+        
+        </ul>
+
+    </div>
+        <div class="other">
+    <h3>OUR INFO CENTER:</h3>
+        <ul>
+        <li>
+            <a>Chittagong info : 01714-162759 </a>
+        </li>
+            <li>
+            <a>Sylhet info : 01713-047461</a>
+        </li>
+            <li>
+            <a>Bogra info : 01713-042500  </a>
+        </li>
+            <li>
+            <a>Khulna info : 01713-240312 </a>
+        </li>
+            <li>
+            <a>Narayanganj Info: (02)-7648924</a>
+        </li>
+            <li>
+            <a>Jessor info : 01755-533154  </a>
+        </li>
+        </ul>
+    </div>
+    
+    </div>
+    </div>
+<div class="footer_second">
+     <p>&copy; Copyright 2018 | All rights reserved. University Hospitals ..</p>
+     
+     </div>
+</footer>
+</body>
+    
